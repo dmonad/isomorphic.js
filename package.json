@@ -16,6 +16,10 @@
     "lint": "standard && tsc",
     "preversion": "npm run test"
   },
+  "files": [
+    "iso.js",
+    "iso-browser.js"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dmonad/isomorphic.js.git"
