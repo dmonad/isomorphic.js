@@ -14,14 +14,5 @@ const cryptoRandomBuffer = nodeCrypto
   ? len => nodeCrypto.randomBytes(len).buffer
   : isoBrowser.cryptoRandomBuffer
 
-Object.defineProperty(exports, '__esModule', {
-  value: true
-})
-
-exports.cryptoRandomBuffer = cryptoRandomBuffer
 exports.performance = perf
-
-exports.default = {
-  performance: perf,
-  cryptoRandomBuffer: cryptoRandomBuffer
-}
+exports.cryptoRandomBuffer = cryptoRandomBuffer

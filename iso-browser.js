@@ -22,14 +22,5 @@ const cryptoRandomBuffer = isoCrypto !== null
     return arr.buffer
   }
 
-Object.defineProperty(exports, '__esModule', {
-  value: true
-})
-
-exports.cryptoRandomBuffer = cryptoRandomBuffer
 exports.performance = perf
-
-exports.default = {
-  performance: perf,
-  cryptoRandomBuffer: cryptoRandomBuffer
-}
+exports.cryptoRandomBuffer = cryptoRandomBuffer
