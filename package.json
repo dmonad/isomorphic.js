@@ -1,6 +1,6 @@
 {
   "name": "isomorphic.js",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Isomorphic JavaScript helper functions (performance, crpyto, ..)",
   "sideEffects": false,
   "main": "./iso.js",
