@@ -1,5 +1,5 @@
 
-const isNode = typeof process !== 'undefined' && process.release && /node|io\.js/.test(process.release.name)
+const isNode = typeof require !== 'undefined' && typeof process !== 'undefined' && process.release && /node|io\.js/.test(process.release.name)
 
 const perf = isNode ? require('perf_hooks').performance : require('./iso-browser.js')
 
