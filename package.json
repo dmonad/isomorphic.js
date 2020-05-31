@@ -7,9 +7,9 @@
   "browser": "./iso-browser.js",
   "dependencies": {},
   "devDependencies": {
-    "standard": "^14.0.0",
-    "typescript": "^3.7.4",
-    "@types/node": "^13.1.6"
+    "@types/node": "^13.13.9",
+    "standard": "^14.3.4",
+    "typescript": "^3.9.3"
   },
   "scripts": {
     "test": "npm run lint",
