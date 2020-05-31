@@ -9,17 +9,19 @@ const isoCrypto = typeof crypto === 'undefined' ? null : crypto
 const cryptoRandomBuffer = isoCrypto !== null
   ? len => {
     // browser
-    const arr = new Uint8Array(len)
+    const buf = new ArrayBuffer(len)
+    const arr = new Uint8Array(buf)
     isoCrypto.getRandomValues(arr)
-    return arr.buffer
+    return buf
   }
   : len => {
     // polyfill
-    const arr = new Uint8Array(len)
+    const buf = new ArrayBuffer(len)
+    const arr = new Uint8Array(buf)
     for (let i = 0; i < len; i++) {
       arr[i] = Math.ceil((Math.random() * 0xFFFFFFFF) >>> 0)
     }
-    return arr.buffer
+    return buf
   }
 
 exports.performance = perf
