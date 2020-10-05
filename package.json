@@ -5,7 +5,7 @@
   "sideEffects": false,
   "main": "./iso.js",
   "browser": "./iso-browser.js",
-  "unpkg": "./iso-browser.js",
+  "unpkg": "./iso-esm.js",
   "dependencies": {},
   "funding": {
     "type": "GitHub Sponsors ❤",
@@ -23,7 +23,8 @@
   },
   "files": [
     "iso.js",
-    "iso-browser.js"
+    "iso-browser.js",
+    "iso-esm.js"
   ],
   "repository": {
     "type": "git",
