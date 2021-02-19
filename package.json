@@ -4,8 +4,22 @@
   "description": "Isomorphic JavaScript helper functions (performance, crpyto, ..)",
   "sideEffects": false,
   "main": "./iso.js",
-  "browser": "./iso-browser.js",
-  "unpkg": "./iso-esm.js",
+  "browser": "./browser.mjs",
+  "unpkg": "./browser.mjs",
+  "exports": {
+    "node": {
+      "import": "./node.mjs",
+      "require": "./iso.js"
+    },
+    "browser": {
+      "import": "./browser.mjs",
+      "export": "./browser.js"
+    },
+    "default": {
+      "import": "./browser.mjs",
+      "require": "./iso.js"
+    }
+  },
   "dependencies": {},
   "funding": {
     "type": "GitHub Sponsors ❤",
@@ -22,9 +36,11 @@
     "preversion": "npm run test"
   },
   "files": [
+    "browser.js",
+    "browser.mjs",
     "iso.js",
-    "iso-browser.js",
-    "iso-esm.js"
+    "node.js",
+    "node.mjs"
   ],
   "repository": {
     "type": "git",
