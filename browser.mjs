@@ -1,5 +1,5 @@
 /* eslint-env browser */
-export const performance = typeof window !== 'undefined' && typeof window.performance === 'undefined' ? null : window.performance
+export const performance = typeof window === 'undefined' ? null : (typeof window.performance !== 'undefined' && window.performance) || null
 
 const isoCrypto = typeof crypto === 'undefined' ? null : crypto
 
