@@ -1,6 +1,5 @@
 /* eslint-env browser */
-// eslint-disable-next-line no-use-before-define
-export const performance = typeof performance !== 'undefined' ? performance : null
+export const performance = typeof window === 'undefined' ? null : (typeof window.performance !== 'undefined' && window.performance) || null
 
 const isoCrypto = typeof crypto === 'undefined' ? null : crypto
 
