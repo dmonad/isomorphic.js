@@ -18,7 +18,8 @@
     "default": {
       "import": "./browser.mjs",
       "require": "./iso.js"
-    }
+    },
+    "./package.json": "./package.json"
   },
   "dependencies": {},
   "funding": {
