@@ -8,17 +8,19 @@
   "unpkg": "./browser.mjs",
   "module": "./browser.mjs",
   "exports": {
-    "node": {
-      "import": "./node.mjs",
-      "require": "./iso.js"
-    },
-    "browser": {
-      "import": "./browser.mjs",
-      "export": "./browser.js"
-    },
-    "default": {
-      "import": "./browser.mjs",
-      "require": "./iso.js"
+    ".": {
+      "node": {
+        "import": "./node.mjs",
+        "require": "./iso.js"
+      },
+      "browser": {
+        "import": "./browser.mjs",
+        "require": "./browser.js"
+      },
+      "default": {
+        "import": "./browser.mjs",
+        "require": "./iso.js"
+      }
     },
     "./package.json": "./package.json"
   },
