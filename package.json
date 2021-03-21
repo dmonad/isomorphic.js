@@ -6,6 +6,7 @@
   "main": "./iso.js",
   "browser": "./browser.mjs",
   "unpkg": "./browser.mjs",
+  "module": "./browser.mjs",
   "exports": {
     "node": {
       "import": "./node.mjs",
