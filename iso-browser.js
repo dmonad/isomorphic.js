@@ -6,7 +6,7 @@ const isoCrypto = typeof crypto === 'undefined' ? null : crypto
 /**
  * @type {function(number):ArrayBuffer}
  */
-const cryptoRandomBuffer = isoCrypto !== null
+const cryptoRandomBuffer = (isoCrypto !== null && typeof isoCrypto.getRandomValues === 'function')
   ? len => {
     // browser
     const buf = new ArrayBuffer(len)
