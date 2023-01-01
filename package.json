@@ -10,14 +10,17 @@
   "exports": {
     ".": {
       "node": {
+        "module": "./node.mjs",
         "import": "./node.mjs",
         "require": "./iso.js"
       },
       "browser": {
+        "module": "./browser.mjs",
         "import": "./browser.mjs",
         "require": "./browser.js"
       },
       "default": {
+        "module": "./browser.mjs",
         "import": "./browser.mjs",
         "require": "./iso.js"
       }
